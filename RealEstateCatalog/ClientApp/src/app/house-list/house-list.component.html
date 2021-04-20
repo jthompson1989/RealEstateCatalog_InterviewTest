@@ -1,0 +1,24 @@
+<table class="styled-table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Address</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Sales Price</th>
+      <th>Sqaure Foot</th>
+      <th>Price By Square Foot</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let house of houselist">
+      <td>{{ house.id }}</td>
+      <td>{{ house.address }}</td>
+      <td>{{ house.city }}</td>
+      <td>{{ house.state }}</td>
+      <td>{{ house.salesPrice }}</td>
+      <td>{{ house.squareFoot }}</td>
+      <td>{{ house.salesPrice / house.squareFoot}}</td>
+    </tr>
+  </tbody>
+</table>
